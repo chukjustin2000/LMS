@@ -79,5 +79,13 @@ public class MainController {
 
 		res.sendRedirect("/");
 	}
+	
+	@GetMapping(value="/deleteBook")
+	public void deleteBook(@RequestParam long id, HttpServletRequest req, HttpServletResponse res) throws IOException {
+
+		 lmsService.delete(id);
+		 
+		res.sendRedirect("/");
+	}
 
 }

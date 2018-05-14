@@ -37,6 +37,7 @@
 							<th>Author</th>
 							<th>Purchase Date</th>
 							<th>Edit</th>
+							<th>Delete</th> 
 						</tr>
 					</thead>
 					<tbody>
@@ -47,6 +48,7 @@
 								<td>${book.author}</td>
 								<td>${book.purchaseDate}</td>
 								<td><a href="update?id=${book.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+								<td><a href="deleteBook?id=${book.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
